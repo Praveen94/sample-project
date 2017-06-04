@@ -1,4 +1,5 @@
 var express=require('express');
+const port=procees.env.PORT || 3000;
 var app=express();
 
 
@@ -8,7 +9,7 @@ res.send('<h1>Welcome to Express.</h1>');
 });
 
 
-app.listen(3000,function(req,res)
+app.listen(port,function(req,res)
 {
-  console.log('Server running in port 3000');
+  console.log(`Server running in port ${port}`);
 });
